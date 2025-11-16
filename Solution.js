@@ -15,16 +15,16 @@ var numSub = function (input) {
         }
 
         numberOfSubstringsContainingOnlyOnes
-                = (numberOfSubstringsContainingOnlyOnes
+                        = (numberOfSubstringsContainingOnlyOnes
                         + sumMembersOfArithmeticProgressionWithFirstMemberOfOneAndStepOfOne(countOnes))
-                % MODULO_VALUE;
+                        % MODULO_VALUE;
         countOnes = 0;
     }
 
     numberOfSubstringsContainingOnlyOnes
-            = (numberOfSubstringsContainingOnlyOnes
+                    = (numberOfSubstringsContainingOnlyOnes
                     + sumMembersOfArithmeticProgressionWithFirstMemberOfOneAndStepOfOne(countOnes))
-            % MODULO_VALUE;
+                    % MODULO_VALUE;
 
     return  numberOfSubstringsContainingOnlyOnes;
 };
