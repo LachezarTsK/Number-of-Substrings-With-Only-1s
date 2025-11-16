@@ -19,20 +19,20 @@ public class Solution
 
             numberOfSubstringsContainingOnlyOnes
                     = (numberOfSubstringsContainingOnlyOnes
-                    + sumMembersOfArithmeticProgressionWithFirstMemberOfOneAndStepOfOne(countOnes))
+                    + SumMembersOfArithmeticProgressionWithFirstMemberOfOneAndStepOfOne(countOnes))
                     % MODULO_VALUE;
             countOnes = 0;
         }
 
         numberOfSubstringsContainingOnlyOnes
                 = (numberOfSubstringsContainingOnlyOnes
-                + sumMembersOfArithmeticProgressionWithFirstMemberOfOneAndStepOfOne(countOnes))
+                + SumMembersOfArithmeticProgressionWithFirstMemberOfOneAndStepOfOne(countOnes))
                 % MODULO_VALUE;
 
         return (int)numberOfSubstringsContainingOnlyOnes;
     }
 
-    private long sumMembersOfArithmeticProgressionWithFirstMemberOfOneAndStepOfOne(long totalMembers)
+    private long SumMembersOfArithmeticProgressionWithFirstMemberOfOneAndStepOfOne(long totalMembers)
     {
         return ((totalMembers + 1) * totalMembers) / 2;
     }
